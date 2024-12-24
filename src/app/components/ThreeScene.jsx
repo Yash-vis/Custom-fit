@@ -120,7 +120,7 @@ const ThreeScene = () => {
         <h1 className="font-bold sm:text-7xl text-4xl flex-wrap sm:w-2/5 mx-10 sm:mx-1 bg-clip-text text-transparent bg-gradient-to-b from-gray-200 to-violet-800 ">
           Get Your Customize Hoodie
         </h1>
-        <div className="absolute sm:right-52 sm:top-56 py-52 px-8 ">
+        <div className="absolute sm:right-52 sm:top-56 py-52 sm:py-0 px-8 sm:px-0 ">
           <Button onClick={navigateToCustomize}>Customize</Button>
         </div>
       </div>

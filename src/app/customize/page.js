@@ -312,7 +312,7 @@ const ThreeScene = () => {
 </div>
 
       {/* Save Button */}
-      <div className="absolute sm:top-[78%] top-[90%]  sm:left-[63%] left-[25%] cursor-pointer border-2 border-gray-600 p-1 rounded-2xl bg-clip bg-gradient-to-r bg-green-600 from-green-950 hover:bg-green-400 font-thin shadow-md shadow-green-200 "
+      <div className="absolute sm:top-[78%] top-[90%] sm:left-[63%] left-[25%] cursor-pointer border-2 border-gray-600 p-1 rounded-2xl bg-clip bg-gradient-to-r bg-green-600 from-green-950 hover:bg-green-400 font-thin shadow-md shadow-green-200 "
         onClick={saveModel} 
       >
         Save Your Design
