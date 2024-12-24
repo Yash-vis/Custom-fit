@@ -1,0 +1,11 @@
+Model Information:
+* title:	Hoodie
+* source:	https://sketchfab.com/3d-models/hoodie-e2eb952d56d74fe7a28b0f87ec13fa32
+* author:	Mr-hammer1799 (https://sketchfab.com/Mr-hammer1799)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Hoodie" (https://sketchfab.com/3d-models/hoodie-e2eb952d56d74fe7a28b0f87ec13fa32) by Mr-hammer1799 (https://sketchfab.com/Mr-hammer1799) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
