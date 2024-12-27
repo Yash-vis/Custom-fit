@@ -152,7 +152,13 @@ const ThreeScene = () => {
 
       const logoGeometry = new THREE.CircleGeometry(0.2, 32);
       const logoMesh = new THREE.Mesh(logoGeometry, logoMaterial);
-      logoMesh.position.set(5.1, 1.2, -1);
+      
+      if (width < 768) {
+        logoMesh.position.set(.3, 2.6, 0.38);  // Move logo for small screens
+        logoMesh.scale.set(.5,.5)
+      } else {
+        logoMesh.position.set(5.1, 1.2, -1); // Original logo position for larger screens
+      }
       logoMesh.rotation.x -= 0.39;
       logoMesh.rotation.y -= 0.01;
       logoMesh.name = "logoMesh";
@@ -167,10 +173,20 @@ const ThreeScene = () => {
 
       const backGeometry = new THREE.CircleGeometry(0.5, 32);
       const backMesh = new THREE.Mesh(backGeometry, backMaterial);
-      backMesh.position.set(4.6, 1.1, -3.29);
-      backMesh.rotation.x += 0.08;
-      backMesh.rotation.y = Math.PI; 
-      backMesh.rotation.y += 0.09;
+      if (width < 768) {
+        backMesh.position.set(0, 2.4, -0.51); 
+        backMesh.scale.set(.6,.6)
+        backMesh.rotation.y -= 1;
+        backMesh.rotation.y = Math.PI;
+        backMesh.rotation.x -= 0.08; 
+      } else {
+        backMesh.position.set(4.6, 1.1, -3.29);
+        backMesh.rotation.x += 0.08;
+        backMesh.rotation.y = Math.PI; 
+        backMesh.rotation.y += 0.09;
+      }
+      
+     
      
       backMesh.name = "backMesh";
       backMeshRef.current = backMesh;
