@@ -206,6 +206,7 @@ const ThreeScene = () => {
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.dampingFactor = 0.25;
+    controls.enableZoom = false;
 
     const animate = () => {
       requestAnimationFrame(animate);
