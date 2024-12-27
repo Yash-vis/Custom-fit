@@ -174,11 +174,11 @@ const ThreeScene = () => {
       const backGeometry = new THREE.CircleGeometry(0.5, 32);
       const backMesh = new THREE.Mesh(backGeometry, backMaterial);
       if (width < 768) {
-        backMesh.position.set(0, 2.4, -0.51); 
+        backMesh.position.set(0, 2.4, -0.5); 
         backMesh.scale.set(.6,.6)
-        backMesh.rotation.y -= 1;
-        backMesh.rotation.y = Math.PI;
-        backMesh.rotation.x -= 0.08; 
+    
+        backMesh.rotation.y = Math.PI+0.05;
+        backMesh.rotation.x -= 0.06; 
       } else {
         backMesh.position.set(4.6, 1.1, -3.29);
         backMesh.rotation.x += 0.08;
