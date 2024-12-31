@@ -183,6 +183,7 @@ const ThreeScene = () => {
         backMesh.position.set(4.6, 1.1, -3.29);
         backMesh.rotation.x += 0.08;
         backMesh.rotation.y = Math.PI; 
+        backMesh.rotation.z = Math.PI; 
         backMesh.rotation.y += 0.09;
       }
       
