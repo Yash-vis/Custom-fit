@@ -157,10 +157,12 @@ const ThreeScene = () => {
         logoMesh.position.set(.3, 2.6, 0.38);  // Move logo for small screens
         logoMesh.scale.set(.5,.5)
       } else {
-        logoMesh.position.set(5.1, 1.2, -1); // Original logo position for larger screens
+        logoMesh.position.set(5.1, 1.2, -0.98); // Original logo position for larger screens
       }
       logoMesh.rotation.x -= 0.39;
-      logoMesh.rotation.y -= 0.01;
+      logoMesh.rotation.y -= 0.1;
+      logoMesh.rotation.z = Math.PI;
+      logoMesh.rotation.y = Math.PI;
       logoMesh.name = "logoMesh";
       logoMeshRef.current = logoMesh;
 
@@ -182,7 +184,6 @@ const ThreeScene = () => {
       } else {
         backMesh.position.set(4.6, 1.1, -3.29);
         backMesh.rotation.x += 0.08;
-        backMesh.rotation.y = Math.PI; 
         backMesh.rotation.z = Math.PI; 
         backMesh.rotation.y += 0.09;
       }
